@@ -38,7 +38,7 @@ app.get('/minimally-qualified', (req, res) =>{
     var qualifieds = 0;
 
         for (let i = 0; i < emojis.length; i++) {
-            if(emojis[i].qualification === 'fully-qualified'){
+            if(emojis[i].qualification === 'minimally-qualified'){
                 emojiminimallyQualified[i] = emojis[i];
                 qualifieds++
             }
@@ -46,6 +46,22 @@ app.get('/minimally-qualified', (req, res) =>{
         }
         console.log(qualifieds + ', Emojis are Minimally Qualified')
         return res.json(emojiminimallyQualified)
+
+})
+
+app.get('/unqualified', (req, res) =>{
+    let emojiUnqualified = {};
+    var qualifieds = 0;
+
+        for (let i = 0; i < emojis.length; i++) {
+            if(emojis[i].qualification === 'unqualified'){
+                emojiUnqualified[i] = emojis[i];
+                qualifieds++
+            }
+            
+        }
+        console.log(qualifieds + ', Emojis are Minimally Qualified')
+        return res.json(emojiUnqualified)
 
 })
 
