@@ -33,6 +33,22 @@ app.get('/fully-qualified', (req, res) =>{
 
 })
 
+app.get('/minimally-qualified', (req, res) =>{
+    let emojiminimallyQualified= {};
+    var qualifieds = 0;
+
+        for (let i = 0; i < emojis.length; i++) {
+            if(emojis[i].qualification === 'fully-qualified'){
+                emojiminimallyQualified[i] = emojis[i];
+                qualifieds++
+            }
+            
+        }
+        console.log(qualifieds + ', Emojis are Minimally Qualified')
+        return res.json(emojiminimallyQualified)
+
+})
+
 
 
 
