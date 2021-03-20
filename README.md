@@ -28,7 +28,7 @@ GET /minimally-qualified
 
 Return only Unqualified Emojis.
 ```python
-GET /fully-qualified
+GET /unqualified
 ```
 
 ## Contributing
