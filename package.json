@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/gustsgomesbr/all-emojis-api"
+    "url": "github.com/gustavosgdev/all-emojis-api"
   },
   "keywords": [
     "emoji.json"
   ],
-  "author": "GustsgomesBr",
+  "author": "Gustavo",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
